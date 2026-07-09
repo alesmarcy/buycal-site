@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Join BuyCal — Get updates & buying tips</title>
+<title>Join BuyCal &mdash; Get updates & buying tips</title>
 <meta name="description" content="Register your interest in BuyCal. Get launch news, buying tips and early access to new features.">
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="logo-white.svg" type="image/svg+xml">
+<link rel="icon" href="images/icon.png" type="image/png">
 </head>
 <body>
 <header>
-  <a href="index.html"><img src="logo-white.svg" alt="BuyCal"></a>
+  <a href="index.html"><img src="images/logo-white.png" alt="BuyCal"></a>
   <nav>
     <a href="index.html">Features</a>
     <a href="join.html" class="active">Join</a>
@@ -20,7 +20,7 @@
 </header>
 <div class="hero" style="padding:56px 24px">
   <h1>Join the BuyCal list</h1>
-  <p>Be first to hear when BuyCal 2.0 lands on Google Play — plus occasional tips on importing, costing and negotiating. No spam, unsubscribe anytime.</p>
+  <p>Be first to hear when BuyCal 2.0 lands on Google Play &mdash; plus occasional tips on importing, costing and negotiating. No spam, unsubscribe anytime.</p>
 </div>
 <section>
   <div class="form-card">
@@ -29,7 +29,7 @@
       <button class="btn" type="submit" id="submitBtn">Register my interest</button>
       <div class="notice" id="notice"></div>
     </form>
-    <p class="muted" style="margin-top:16px;text-align:center">You'll receive a confirmation email — click it to complete your registration. See our <a href="privacy.html">privacy policy</a>.</p>
+    <p class="muted" style="margin-top:16px;text-align:center">You'll receive a confirmation email &mdash; click it to complete your registration. See our <a href="privacy.html">privacy policy</a>.</p>
   </div>
 </section>
 <footer>
@@ -50,7 +50,7 @@ document.getElementById('joinForm').addEventListener('submit', async function(e)
     var r=await fetch('https://assets.mailerlite.com/jsonp/813255/forms/192497198224639579/subscribe',{method:'POST',body:fd});
     if(r.ok){ n.textContent='Thanks! Check your inbox to confirm your subscription.'; n.className='notice ok'; document.getElementById('joinForm').reset(); }
     else{ throw new Error(); }
-  }catch(err){ n.textContent='Something went wrong — please try again.'; n.className='notice err'; }
+  }catch(err){ n.textContent='Something went wrong &mdash; please try again.'; n.className='notice err'; }
   btn.disabled=false; btn.textContent='Register my interest';
 });
 </script>
