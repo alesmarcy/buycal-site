@@ -4,14 +4,16 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--navy)
 header{background:var(--navy);padding:18px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
 header img{height:44px}
 .brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none}
-.nav-icon{height:40px !important;width:40px;border-radius:10px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.brand .wm{height:24px;width:auto}
+.nav-icon{height:38px !important;width:38px;border-radius:9px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.3)}
 .more-from{margin-top:14px;font-size:14px;color:#cfd8e3}
 .more-from a{font-weight:600}
 nav a{color:#fff;text-decoration:none;margin-left:22px;font-size:15px;opacity:.9}
 nav a:hover,nav a.active{opacity:1;color:var(--teal)}
 .hero{background:linear-gradient(135deg,var(--navy) 0%,#0a2a4a 60%,#00647a 100%);color:#fff;text-align:center;padding:80px 24px}
 .hero.photo{background:linear-gradient(rgba(6,16,32,.72),rgba(6,16,32,.72)),url('images/bg.jpg') center/cover no-repeat}
-.hero-logo{width:min(300px,70vw);margin-bottom:26px}
+.hero-inner{display:flex;flex-direction:column;align-items:center}
+.hero-logo{width:min(280px,65vw);height:auto;margin-bottom:26px}
 .app-icon{width:110px;height:110px;border-radius:24px;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.4);margin-bottom:22px;display:inline-block}
 .app-icon.small{width:84px;height:84px;border-radius:18px;box-shadow:0 8px 22px rgba(0,0,0,.25);margin-bottom:16px}
 .features-alt{max-width:1000px;margin:0 auto;padding:64px 24px 24px}
