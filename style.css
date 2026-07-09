@@ -3,6 +3,10 @@
 body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--navy);background:#fff;line-height:1.6}
 header{background:var(--navy);padding:18px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
 header img{height:44px}
+.brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none}
+.nav-icon{height:40px !important;width:40px;border-radius:10px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.more-from{margin-top:14px;font-size:14px;color:#cfd8e3}
+.more-from a{font-weight:600}
 nav a{color:#fff;text-decoration:none;margin-left:22px;font-size:15px;opacity:.9}
 nav a:hover,nav a.active{opacity:1;color:var(--teal)}
 .hero{background:linear-gradient(135deg,var(--navy) 0%,#0a2a4a 60%,#00647a 100%);color:#fff;text-align:center;padding:80px 24px}
