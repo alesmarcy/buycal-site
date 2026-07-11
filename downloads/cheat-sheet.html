@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Importer's Landed Cost Cheat Sheet — BuyCal</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color:#1c2a3e; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:210mm; min-height:297mm; padding:18mm 16mm; position:relative; }
+  .top { display:flex; align-items:center; justify-content:space-between; border-bottom:3px solid #00C2D0; padding-bottom:12px; margin-bottom:20px; }
+  .top .brand { display:flex; align-items:center; gap:12px; }
+  .top img { width:46px; height:46px; border-radius:10px; }
+  .top .brand b { font-size:22px; color:#101C32; letter-spacing:1px; }
+  .top .kicker { text-align:right; font-size:11px; color:#6b7a8f; text-transform:uppercase; letter-spacing:1.5px; }
+  h1 { font-size:26px; color:#101C32; margin-bottom:4px; }
+  .sub { font-size:13px; color:#4a5a70; margin-bottom:22px; }
+  h2 { font-size:15px; color:#0084A0; margin:20px 0 8px; padding-left:10px; border-left:4px solid #00C2D0; }
+  p, li { font-size:12.5px; line-height:1.55; color:#2b3a4e; }
+  ul { padding-left:20px; margin:4px 0; }
+  li { margin-bottom:3px; }
+  .grid { display:flex; gap:14px; margin:6px 0; }
+  .box { flex:1; background:#F4F8FA; border:1px solid #d8e3ea; border-radius:8px; padding:12px 14px; }
+  .box h3 { font-size:12px; color:#101C32; margin-bottom:6px; }
+  .formula { background:#101C32; color:#fff; border-radius:8px; padding:12px 16px; margin:8px 0; font-size:13px; line-height:1.7; }
+  .formula code { color:#7EE0E8; font-family:'Consolas',monospace; }
+  .tag { display:inline-block; background:#E0FC40; color:#3a4700; font-size:10px; font-weight:bold; padding:2px 8px; border-radius:20px; margin-left:6px; vertical-align:middle; }
+  .cta { margin-top:26px; background:linear-gradient(135deg,#00C2D0,#0084A0); border-radius:12px; padding:18px 22px; color:#fff; display:flex; align-items:center; justify-content:space-between; }
+  .cta div { font-size:14px; }
+  .cta b { font-size:17px; }
+  .cta .pill { background:#fff; color:#0084A0; font-weight:bold; font-size:13px; padding:10px 18px; border-radius:30px; white-space:nowrap; }
+  .foot { position:absolute; bottom:10mm; left:16mm; right:16mm; font-size:10px; color:#8a97a8; text-align:center; border-top:1px solid #e2e8ee; padding-top:8px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top">
+    <div class="brand"><img src="../images/icon.png" alt=""><b>BUYCAL</b></div>
+    <div class="kicker">Free Guide for Buyers &amp; Importers</div>
+  </div>
+
+  <h1>The Importer's Landed Cost Cheat Sheet</h1>
+  <p class="sub">Everything you need to know your true cost per unit — before you commit to an order.</p>
+
+  <h2>1. The 6 numbers to get from every supplier</h2>
+  <p>Before you can cost anything, ask your supplier for these. If they can give you all six, you can calculate an accurate landed cost on the spot:</p>
+  <div class="grid">
+    <div class="box"><h3>① FOB price</h3>Unit price at port of origin, in their currency.</div>
+    <div class="box"><h3>② Units per carton</h3>Inner and outer carton quantities.</div>
+    <div class="box"><h3>③ Carton size</h3>L × W × H in cm (the outer carton).</div>
+  </div>
+  <div class="grid">
+    <div class="box"><h3>④ Carton weight</h3>Gross weight per outer carton, in kg.</div>
+    <div class="box"><h3>⑤ MOQ / order qty</h3>Minimum order and your intended quantity.</div>
+    <div class="box"><h3>⑥ Terms</h3>Payment terms and what's included (packaging, certs).</div>
+  </div>
+
+  <h2>2. The landed cost formula</h2>
+  <p>Work from the carton up. First the cubic volume, then freight per unit, then the all-in landed cost:</p>
+  <div class="formula">
+    <code>CBM per carton = (L × W × H in cm) ÷ 1,000,000</code><br>
+    <code>Freight / unit = (container cost ÷ container CBM) × (carton CBM ÷ units per carton)</code><br>
+    <code>Landed unit cost = (FOB ÷ FX rate + freight) × (1 + duty%) × (1 + fees%) × buffer</code>
+  </div>
+  <p><span class="tag">TIP</span> The "buffer" (≈1.1–1.16) covers local GST/handling — adjust it to your market. A 20&#39; container holds ~28 CBM, a 40&#39; ~56 CBM.</p>
+
+  <h2>3. Volumetric weight — why "big but light" costs more</h2>
+  <p>Freight is charged on whichever is greater: actual weight or <b>volumetric</b> weight. Bulky, light goods get billed by volume:</p>
+  <div class="formula"><code>Volumetric weight (kg) = CBM × 167</code></div>
+  <p>If your volumetric weight beats your actual weight, that's your billable weight. Dense products win here; bulky ones cost you.</p>
+
+  <h2>4. RRP &amp; margin — and working backwards</h2>
+  <div class="grid">
+    <div class="box"><h3>Forward</h3>RRP = landed cost × your markup<br>Margin % = (RRP − landed cost) ÷ RRP × 100</div>
+    <div class="box"><h3>Backward (negotiation)</h3>Know your target RRP &amp; margin first, then solve for the highest price you can pay your supplier and still hit it.</div>
+  </div>
+
+  <h2>5. Negotiation checklist</h2>
+  <ul>
+    <li><b>Know your number before you talk price</b> — walk in with your target buy price already calculated.</li>
+    <li><b>Ask for price breaks</b> at higher MOQs — and compare them on a landed basis, not FOB.</li>
+    <li><b>Get carton specs in writing</b> — dimensions and weights drive your freight more than you'd think.</li>
+    <li><b>Confirm what's included</b> — inner cartons, packaging, certificates, tooling.</li>
+    <li><b>Compare FOB vs CIF quotes</b> only after converting both to true landed cost.</li>
+  </ul>
+
+  <div class="cta">
+    <div><b>Do all of this in seconds.</b><br>The BuyCal app runs every one of these calculations for you — free.</div>
+    <div class="pill">Get BuyCal on Google Play</div>
+  </div>
+
+  <div class="foot">
+    &copy; 2026 BuyCal by AlesMarc &nbsp;·&nbsp; buycal.com.au &nbsp;·&nbsp; support@alesmarc.com &nbsp;·&nbsp; These formulas are indicative — always verify duties, taxes and freight with your agents.
+  </div>
+</div>
+</body>
+</html>

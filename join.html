@@ -21,19 +21,20 @@
   </nav>
 </header>
 <div class="hero" style="padding:56px 24px">
-  <h1>Join the BuyCal list</h1>
-  <p>Get occasional tips on importing, costing and negotiating &mdash; plus news on new BuyCal features. No spam, unsubscribe anytime.</p>
-  <p style="margin-top:18px"><a href="https://play.google.com/store/apps/details?id=app.buycal.com"><img src="images/google-play-badge.png" alt="Get it on Google Play" style="height:64px"></a></p>
+  <div class="badge">Free download</div>
+  <h1>Get the Importer's Landed Cost Cheat Sheet</h1>
+  <p>Drop your email and we'll send you our free one-page cheat sheet &mdash; the 6 numbers to get from every supplier, the landed cost formula, volumetric weight, and a negotiation checklist. Plus occasional buying tips. No spam, unsubscribe anytime.</p>
 </div>
 <section>
   <div class="form-card">
     <form id="joinForm">
       <input type="email" id="email" placeholder="you@example.com" required autocomplete="email">
-      <button class="btn" type="submit" id="submitBtn">Register my interest</button>
+      <button class="btn" type="submit" id="submitBtn">Send me the cheat sheet</button>
       <div class="notice" id="notice"></div>
     </form>
-    <p class="muted" style="margin-top:16px;text-align:center">You'll receive a confirmation email &mdash; click it to complete your registration. See our <a href="privacy.html">privacy policy</a>.</p>
+    <p class="muted" style="margin-top:16px;text-align:center">We'll email your cheat sheet and add you to the BuyCal list. See our <a href="privacy.html">privacy policy</a>.</p>
   </div>
+  <p style="text-align:center;margin-top:28px"><a href="https://play.google.com/store/apps/details?id=app.buycal.com"><img src="images/google-play-badge.png" alt="Get it on Google Play" style="height:60px"></a></p>
 </section>
 <footer>
   <div><a href="index.html">Features</a> &middot; <a href="join.html">Join</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms</a></div>
@@ -51,7 +52,7 @@ document.getElementById('joinForm').addEventListener('submit', async function(e)
     fd.append('ml-submit','1');
     fd.append('anticsrf','true');
     var r=await fetch('https://assets.mailerlite.com/jsonp/813255/forms/192497198224639579/subscribe',{method:'POST',body:fd});
-    if(r.ok){ n.textContent='Thanks! Check your inbox to confirm your subscription.'; n.className='notice ok'; document.getElementById('joinForm').reset(); }
+    if(r.ok){ n.textContent='Thanks! Check your inbox — your cheat sheet is on its way.'; n.className='notice ok'; document.getElementById('joinForm').reset(); }
     else{ throw new Error(); }
   }catch(err){ n.textContent='Something went wrong &mdash; please try again.'; n.className='notice err'; }
   btn.disabled=false; btn.textContent='Register my interest';
